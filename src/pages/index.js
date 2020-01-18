@@ -2,7 +2,7 @@ import {Redirect} from 'react-router';
 import Link from 'umi/link';
 
 const shaders1 = '/shaders1'
-// const shaders2 = '/shaders2'
+const shaders2 = '/shaders2'
 // const shaders3 = '/shaders3'
 // const shaders4 = '/shaders4'
 // const shaders5 = '/shaders5'
@@ -16,12 +16,12 @@ export default () => (
     {/* <Redirect to="/s1" /> */ }
     <ol>
       <li>
-        <Link to={shaders1}>从toy到webgl：最简单的颜色变化</Link>
-      </li>
-      {/* <li>
-        <Link to={shaders2}>从toy到webgl：相对复杂点的</Link>
+        <Link to={shaders1}>pujiang_bianjian</Link>
       </li>
       <li>
+        <Link to={shaders2}>tongnan_ningmeng</Link>
+      </li>
+      {/* <li>
         <Link to={shaders3}>从toy到webgl：钻石，只成功了shader文件，另一个textureLod搞不定</Link>
       </li>
       <li>

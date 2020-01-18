@@ -1,0 +1,51 @@
+// ------------------------------主产地---------------------------------------
+export const data1 = [
+  { lat: 30.11, lng: 105.50, name: '重庆', city: 'CHINA', value: 14.9, money: 1.2, export: '美国、意大利、法国' },
+  { lat: 36.46, lng: -119.25, name: '加州', city: 'AMERICA', value: 12.3, money: 0.9, export: '美国、意大利、法国' },
+  { lat: 37.35, lng: 14.0, name: '西西里岛', city: 'ITALY', value: 9.6, money: 0.5, export: '美国、意大利、法国' },
+];
+// ------------------------------进口国---------------------------------------
+export const data2 = [
+  { lat: 60.603215, lng: 30.066394, name: '圣彼得堡', name1: 'St.Petersburg', value: 100 },
+  { lat: 42.96456, lng: 130.964, name: '海参崴', name1: 'Vladivostok', value: 500 },
+  { lat: 45.2363, lng: 37.273, name: '新罗西斯克', name1: 'Novorossiysk', value: 100 },
+  { lat: 57.249, lng: 40.0859, name: '莫斯科', name1: 'Moscow', value: 100 },
+  { lat: -6.98, lng: 113.386, name: '泗水', name1: 'Surabaya', value: 100 },
+  { lat: -6.28, lng: 106.70, name: '雅加达', name1: 'Jakarta', value: 100 },
+  { lat: 3.195, lng: 101.60, name: '巴生港', name1: 'Basheng port', value: 800 },
+  { lat: 5.4735, lng: 100.378, name: '槟城', name1: 'Penang', value: 100 },
+  { lat: 2.932, lng: 101.47, name: '吉隆坡', name1: 'Kuala Lumpur', value: 100 },
+  { lat: 1.439, lng: 103.6, name: '新加坡', name1: 'Singapore', value: 100 },
+  { lat: 12.24, lng: 122.9, name: '菲律宾', name1: 'The Philippines', value: 100 },
+  { lat: 16.03, lng: 101.16, name: '泰国', name1: 'Thailand', value: 200 },
+  { lat: 24.95, lng: 121.51, name: '台湾', name1: 'Taiwan', value: 100 },
+  { lat: 25.15, lng: 55.37, name: '迪拜', name1: 'Dubai', value: 100 },
+  { lat: 4.64, lng: 114.61, name: '文莱', name1: 'Brunei', value: 100 },
+  { lat: 14.29, lng: 108.24, name: '越南', name1: 'Vietnam', value: 1000 },
+  { lat: 22.43, lng: 114.154, name: '香港', name1: 'Hong Kong', value: 100 },
+  { lat: 25.44, lng: 51.22, name: '卡塔尔', name1: 'Qatar', value: 100 },
+  { lat: 49.18, lng: 71.65, name: '哈萨克斯坦', name1: 'Kazakhstan', value: 100 },
+  { lat: 30.63, lng: 70.51, name: '巴基斯坦', name1: 'Pakistan', value: 100 },
+  { lat: 38.65, lng: 71.92, name: '塔吉克斯坦', name1: 'Tajikistan', value: 100 },
+  { lat: 41.73, lng: 74.82, name: '吉尔吉斯斯坦', name1: 'Kyrgyzstan', value: 100 },
+  { lat: 41.60, lng: 63.48, name: '乌兹别克斯坦', name1: 'Uzbekistan', value: 100 },
+  { lat: 7.93, lng: 80.62, name: '斯里兰卡', name1: 'Sri Lanka', value: 100 },
+  { lat: 23.44, lng: 90.11, name: '孟加拉', name1: 'Bengal', value: 100 },
+  { lat: 31.61, lng: 35.53, name: '约旦', name1: 'Jordan', value: 100 },
+  { lat: 35.06, lng: 33.25, name: '塞浦路斯', name1: 'Cyprus', value: 100 },
+  { lat: 39.90, lng: 116.39, name: '北京', name1: 'Beijing', value: 100 },
+  { lat: 31.22, lng: 121.47, name: '上海', name1: 'Shanghai', value: 100 },
+];
+/* ******---------------------------潼南销售地------------------------------------*********/
+export const data3 = [
+  { lat: 40.94, lng: -73.62, name: '美国', name1: 'America', value: 100 },
+  { lat: 52.08, lng: 10.22, name: '德国', name1: 'Germany', value: 100 },
+  { lat: 57.24, lng: 40.08, name: '俄罗斯', name1: 'Russia', value: 100 },
+  { lat: 52.13, lng: 5.39, name: '荷兰', name1: 'Netherlands', value: 100 },
+  { lat: 47.66, lng: 2.48, name: '法国', name1: 'France', value: 100 },
+  { lat: 53.35, lng: -1.72, name: '英国', name1: 'Britain', value: 100 },
+  { lat: 44.99, lng: 10.48, name: '意大利', name1: 'Italy', value: 100 },
+  { lat: 52.88, lng: 18.66, name: '波兰', name1: 'poland', value: 100 },
+  { lat: 45.43, lng: -75.99, name: '加拿大', name1: 'Canada', value: 100 },
+  { lat: 35.78, lng: 139.86, name: '日本', name1: 'Japan', value: 100 },
+];

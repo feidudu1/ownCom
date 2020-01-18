@@ -1,0 +1,73 @@
+@keyframes bgOpacity {
+  0% {
+    top: 0px;
+    opacity: 0;
+    }
+    
+  10% {
+    top: -10px;
+    opacity: 1;
+    }
+    
+  100% {
+    top: -100px;
+    opacity: 0;
+    }
+    
+}
+  
+.s2CenterMap {
+    width: 2880px;
+  height: 2160px;
+  position: absolute;
+  left: 1440px;
+  top: 1200px;
+  background: url('../../../../assets/shaders1/mapBg0.png') center 0px no-repeat;
+  pointer-events: none;
+  // background-color cyan
+  .bg1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url('../../../../assets/shaders1/mapText.svg') center 0px no-repeat;
+  }
+    
+  .loopStatic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url('../../../../assets/shaders1/mapBg1.png') center 0px no-repeat;
+  }
+    
+  .loop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url('../../../../assets/shaders1/mapBg1.png') center 0px no-repeat;
+    animation: bgOpacity 6s linear infinite;
+  }
+    
+  .loop0 {
+    animation-delay: 0s;
+  }
+    
+  .loop1 {
+    animation-delay: 1.5s;
+  }
+    
+  .loop2 {
+    animation-delay: 3s;
+  }
+    
+  .loop3 {
+    animation-delay: 4.5s;
+  }
+    
+  }
+  

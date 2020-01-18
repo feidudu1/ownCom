@@ -1,5 +1,9 @@
 import {connect} from 'dva';
-import V2shadertoy from './components/V2shadertoy';
+import EarthMap from './components/EarthMap';
+import WorldMap from './components/WorldMap';
+import LeftTopCarouselImg from './components/LeftTopCarouselImg';
+import SlideShow from './components/SlideShow';
+import LeftWordCloud from './components/LeftWordCloud';
 
 import {
   Component,
@@ -28,7 +32,21 @@ class S1 extends Component {
     } = this.props;
     return (
       <div className={style.main}>
-        <V2shadertoy />
+        <div className='comItem'>
+          <EarthMap />
+        </div>
+        <div className='comItem'>
+          <WorldMap />
+        </div>
+        <div className='comItem'>
+          <LeftTopCarouselImg />
+        </div>
+        <div className='comItem'>
+          <SlideShow />
+        </div>
+        <div className='comItem'>
+          <LeftWordCloud />
+        </div>
       </div>
     )
   }

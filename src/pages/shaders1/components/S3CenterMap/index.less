@@ -1,0 +1,113 @@
+@keyframes rAnimate1 {
+  0% {
+    opacity: 1;
+    rx: 26; 
+    ry: 19;
+  }
+
+  100% {
+    opacity: 0; 
+    rx: 50; 
+    ry: 36.53;
+  }
+}
+  
+    
+@keyframes rAnimate2 {
+  0% {
+    opacity: 1;
+    rx: 12;
+    ry: 7;
+  }
+    
+  100% {
+    opacity: 0;
+    rx: 30;
+    ry: 17.5;
+  }
+}
+  
+    
+@keyframes rAnimate3 {
+  0% {
+    opacity: 1; 
+    rx: 13; 
+    ry: 7.5;
+  }
+
+  100% {
+    opacity: 0;
+    rx: 30; 
+    ry: 14.42;
+  }
+}
+  
+    
+@keyframes xAnimate {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, -10px);
+  }
+}
+  
+    
+@keyframes xAnimate2 {
+  0% {
+    transform: translate(0, 4px);
+  }
+
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+  
+    
+@keyframes xAnimate3  {
+  0% {
+    transform: translate(0, 6px);
+  }
+
+  100% {
+    transform: translate(0, -6px);
+  }
+}
+  
+    
+.middleMap {
+  position: absolute;
+  left: 1421px;
+  top: 3500px;
+  width: 2922px;
+  height: 2102px;
+  background: url('../../../../assets/shaders1/middleMapBg.png') no-repeat;
+  background-size: 100% 100%;
+}
+  
+.ellipseAni {
+  animation: rAnimate1 1.7s linear 0s infinite;
+}
+  
+.ellipseAni2 {
+  animation: rAnimate2 1.5s linear 0s infinite;
+}
+  
+.ellipseAni3 {
+  animation: rAnimate3 1s linear 0s infinite;
+}
+  
+.image1 {
+  animation: xAnimate 1s linear 0s infinite alternate;
+}
+  
+.image2 {
+  animation: xAnimate2 2s linear 0s infinite alternate;
+}
+  
+.image3 {
+  animation: xAnimate3 3s linear 0s infinite alternate;
+}
+  
+

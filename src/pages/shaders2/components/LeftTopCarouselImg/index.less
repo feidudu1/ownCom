@@ -1,0 +1,124 @@
+@keyframes scale1 {
+  0% {
+    transform: scale(0);
+  }
+    
+  100% {
+    transform: scale(1);
+  }
+    
+}
+  
+.leftTopCarouselImg {
+  position: absolute;
+  left: 42px;
+  top: 139px;
+  width: 450px;
+  height: 283px;
+  // background-color #ffffff
+  // opacity 0.6
+  .bottomThree {
+    position: absolute;
+  }
+    
+  .topExhibition {
+    width: 220px;
+    height: 160px;
+    position: absolute;
+    top: 10px;
+    left: 114px;
+    text-align: center;
+    .topExhibition-box {
+      display: inline-block;
+      position: relative;
+      top: 50%;
+      transform: translate(0, -50%);
+      .imgStyle {
+        display: none;
+      }
+        
+      .showImg {
+        animation: scale1 1s ease-out;
+        border: 1px solid #0079FB;
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: 220px;
+        max-height: 160px;
+      }
+        
+      .icon {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+      }
+        
+      .icon1 {
+        background: url('../../../../assets/shaders2/leftTop.svg') no-repeat;
+        background-size: 100% 100%;
+        top: -6px;
+        left: -6px;
+      }
+        
+      .icon2 {
+        background: url('../../../../assets/shaders2/rightTop.svg') no-repeat;
+        background-size: 100% 100%;
+        top: -6px;
+        right: -6px;
+      }
+        
+      .icon3 {
+        background: url('../../../../assets/shaders2/leftBottom.svg') no-repeat;
+        background-size: 100% 100%;
+        bottom: -6px;
+        left: -6px;
+      }
+        
+      .icon4 {
+        background: url('../../../../assets/shaders2/rightBottom.svg') no-repeat;
+        background-size: 100% 100%;
+        bottom: -6px;
+        right: -6px;
+      }
+        
+      .text {
+        position: absolute;
+        bottom: -26px;
+        display: none;
+      }
+        
+      .textShow {
+        height: 19px;
+        line-height: 17px;
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-image: linear-gradient(to right, rgba(0, 121, 251, 0), rgba(0, 121, 251, 1.0), rgba(0, 121, 251, 0)) 1 10;
+        display: block;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-image: linear-gradient(to right, rgba(0, 121, 251, 0), rgba(0, 121, 251, 0.5), rgba(0, 121, 251, 0))
+      }
+    }
+  }
+}
+  
+    
+      
+        
+    // .boxImg
+    //   position absolute
+    //   text-align center
+    //   .showImg
+    //     width auto
+    //     height auto
+    //     max-width 100%
+    //     max-height 100%
+    //     position absolute
+    //     display none
+    // .showImgBlock
+    //   width 172px
+    //   height 172px
+    //   border 1px solid #0079FB
+    //   display block

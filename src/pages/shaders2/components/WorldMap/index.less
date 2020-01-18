@@ -1,0 +1,32 @@
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+  
+    
+.worldMap {
+  width: 554px;
+  height: 263px;
+  position: absolute;
+  left: 42px;
+  top: 761px;
+  background: url('../../../../assets/shaders2/world.png') no-repeat;
+  .bigC {
+    animation: rotate1 9s linear infinite;
+  }
+    
+  .canvas {
+    position: absolute;
+  }
+}
+  

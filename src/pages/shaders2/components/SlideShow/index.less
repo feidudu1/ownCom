@@ -1,0 +1,100 @@
+@widthStandard: 226px;
+@heightStandard: 145px;
+@containerWidth: 2 * @widthStandard;
+@scale1: 1.3;
+@scale2: 1.15;
+@largerDivW: @scale1 * @widthStandard;
+@largeDivH: @scale1 * @heightStandard;
+@translateX: 0.5 * @widthStandard;
+@translateXN: -0.5 * @widthStandard;
+@translateZ: -1 * @widthStandard / 3;
+@containerTranslate: 0.12 * @widthStandard;
+@navWidth: @containerWidth * 1.05;
+.slideShow {
+  width: 450px;
+  height: 238px;
+  position: absolute;
+  left: 41px;
+  top: 1330px;
+  img {
+    max-width: 100%;
+  }
+}
+  
+  .wrap {
+    width: @containerWidth transform translateX(@containerTranslate) perspective 1000px transform-style preserve-3d; // .cover
+
+    //   width @navWidth
+    //   height @largeDivH
+    //   position absolute
+    //   background rgba(0,0,0,0.6)
+    //   transform translateZ(-20px)
+    .picContainer {
+      width: @largerDivW;
+      height: @largeDivH;
+      margin: 0 auto;
+      position: relative;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      div {
+        width: @widthStandard;
+        height: @heightStandard;
+        display: inline-block; 
+        position: absolute; 
+        left: 0; 
+        top: 0; 
+        transition: 1s;
+        visibility: hidden;
+        opacity: 0; // background-clip padding-box
+        background-color: #02193F;
+        span {
+          display: block;
+          width: 100%; 
+          text-align: center;
+          font-size: 12px; 
+          color: #DFEEF4;
+        }
+      }
+
+
+      .current {
+        transform: translateX(10px) translateZ(0) rotateY(0deg) scale(@scale1); 
+        opacity: 1; 
+        visibility: visible; // border-style solid
+        // border-width 8px
+        // border-image url('./border.png') 10 round
+      }
+
+      .left {
+        transform: translateX(@translateXN) translateZ(@translateZ) rotateY(5deg) scale(@scale2); 
+        opacity: 0.6; 
+        visibility: visible;
+      }
+
+      .right {
+        transform: translateX(@translateX) translateZ(@translateZ) rotateY(-5deg) scale(@scale2);
+        opacity: 0.6; 
+        visibility: visible;
+      }
+
+      .leftouter {
+        transform: translateX(@translateXN) translateZ(@translateZ) rotateY(5deg) scale(@scale2); 
+        visibility: hidden; 
+        opacity: 0;
+      }
+
+      .rightouter {
+        transform: translateX(@translateX) translateZ(@translateZ) rotateY(-5deg) scale(@scale2); 
+        visibility: hidden; 
+        opacity: 0;
+      }
+
+      .other {
+        visibility: hidden; 
+        opacity: 0;
+      }
+    }
+  }
+    
+      
+        
