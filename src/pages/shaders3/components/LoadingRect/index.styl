@@ -1,0 +1,42 @@
+.loadingRect
+  width 274px
+  height 274px
+  margin 9px
+  position absolute
+  // display flex
+  // justify-content space-around
+  $unit = 1s
+  .top 
+    position absolute
+    width 100%
+    display flex
+    justify-content center
+    top 105 px
+    for $num in (1..4)
+      span:nth-child({$num})
+        animation 4s load $unit*$num  infinite
+  .bottom 
+    position absolute
+    width 100%
+    display flex
+    justify-content center
+    bottom 105px
+    for $num in (1..4)
+      span:nth-child({$num})
+        animation 4s load $unit*($num + 2) infinite
+  span 
+      display inline-block
+      width 3px
+      height 3px
+      margin 1px
+      background #1492e2
+      
+  @keyframes load 
+    10%,30%
+      background #f7da39
+    50%,100% 
+      background #1492e2
+      
+  
+  
+    

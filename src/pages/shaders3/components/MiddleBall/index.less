@@ -1,0 +1,168 @@
+@keyframes display {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  
+    
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+ 
+    
+
+.middleBall {
+  position: relative;
+  z-index: 2;
+  background: url('./img/big1.png') no-repeat;
+  background-position: 135px 34px;
+  width: 850px;
+  height: 628px;
+}
+  
+  .ballTitle {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    font-weight: 200;
+    color: #D8D8D8;
+    font-size: 12px;
+    span {
+      opacity: 0.5;
+    }
+  }
+  .counter {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-49%, -50%);
+    width: 100px;
+    height: 64px;
+
+    span {
+      color: #fff;
+      font-size: 36px;
+      font-weight: 400;
+      text-shadow: 0 0 10px #9df6f8;
+    }
+
+    span.spanUnit {
+      font-size: 9px;
+      font-weight: 200;
+      color: rgba(255, 255, 255, 0.2) !important;
+      text-shadow: none;
+    }
+  }
+    
+      
+  .lightning {
+    position: absolute;
+    left: 120px;
+    top: 18px;
+    opacity: 0;
+    animation: display 1s forwards 2.5s;
+  }
+    
+  .wonderRect {
+    position: absolute;
+    top: 172px;
+    left: 273px;
+  }
+    
+  .loadingRect {
+    position: absolute;
+    top: 172px;
+    left: 273px;
+  }
+    
+  .energyBarParent {
+    position: absolute;
+    left: 49%;
+    top: 51%;
+    transform: translate(-48%, -53%);
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+  }
+    
+  .ring1,.ring2,.ring3 {
+    width: 602px;
+    height: 622px;
+    position: absolute;
+    left: 120px;
+    top: 5px;
+    opacity: 0.6;
+  }
+  .ring1 {
+    background: url('./img/ring1.png') no-repeat;
+    background-position: 0% 90%;
+    animation: rotate1 8s linear infinite;
+  }
+    
+  .ring2 {
+    background: url('./img/ring2.png') no-repeat;
+    background-position: 42% 30%;
+    animation: rotate1 12s linear infinite;
+  }
+    
+  .ring3 {
+    background: url('./img/ring3.png') no-repeat;
+    background-position: 91% 46%;
+    animation: rotate1 5s linear infinite;
+  }
+    
+  .innerRing {
+    position: absolute;
+    width: 400px;
+    height: 401px;
+    background: url('./img/innerRing.png');
+    left: 220px;
+    top: 120px;
+    z-index: 2;
+    animation: rotate2 3s infinite linear;
+  }
+    
+  .innerRing1 {
+    position: absolute;
+    width: 237px;
+    height: 239px;
+    background: url('./img/innerRing1.png');
+    left: 301px;
+    top: 197px;
+    z-index: 2;
+    animation: rotate2 4s infinite linear;
+  }
+    
+  .shiningTri {
+    position: absolute;
+    width: 249px;
+    height: 73px;
+    background: url('./img/shingingTri.png');
+    left: 285px;
+    top: 248px;
+    z-index: 2;
+    animation: opacity2 2.5s infinite;
+  }
+    
+@keyframes display {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+  
+    

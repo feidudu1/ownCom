@@ -1,0 +1,69 @@
+.wonderRect
+  width 265px
+  height 265px
+  margin 12px
+  background-color transparent
+  border-radius: 270px
+  position absolute
+  .clipRect
+    position absolute
+    width 265px
+    height 265px
+    background-color transparent
+    border-radius: 270px
+    border 16px solid rgba(236,131,38, 0.5)
+    opacity 0
+  .clipRect:nth-child(1)
+    border-color rgba(236,131,38, 1)
+    -webkit-clip-path: inset(73px 150px 172px 0)
+    clip-path: inset(73px 150px 172px 0)
+    animation: 12s run linear infinite
+  .clipRect:nth-child(2)
+    border-color rgba(236,131,38, 0.9)
+    -webkit-clip-path: inset(105px 150px 140px 0)
+    clip-path: inset(105px 150px 140px 0)
+    animation: 12s run linear 1.5s infinite
+  .clipRect:nth-child(3)
+    border-color rgba(236,131,38, 0.8)
+    -webkit-clip-path: inset(138px 150px 106px 0)
+    clip-path: inset(138px 150px 106px 0)
+    animation: 12s run linear 3s infinite
+  .clipRect:nth-child(4)
+    border-color rgba(236,131,38, 0.7)
+    -webkit-clip-path: inset(171px 150px 74px 0)
+    clip-path: inset(171px 150px 74px 0)
+    animation: 12s run linear 4.5s infinite
+  .clipRect:nth-child(5)
+    border-color rgba(236,131,38, 1)
+    -webkit-clip-path: inset(73px 0 172px 150px)
+    clip-path: inset(73px 0 172px 150px)
+    animation: 12s run linear 6s infinite
+  .clipRect:nth-child(6)
+    border-color rgba(236,131,38, 0.9)
+    -webkit-clip-path: inset(105px 0 140px 150px)
+    clip-path: inset(105px 0 140px 150px)
+    animation: 12s run linear 7.5s infinite
+  .clipRect:nth-child(7)
+    border-color rgba(236,131,38, 0.8)
+    -webkit-clip-path: inset(137px 0 106px 150px)
+    clip-path: inset(137px 0 106px 150px)
+    animation: 12s run linear 9s infinite
+  .clipRect:nth-child(8)
+    border-color rgba(236,131,38, 0.7)
+    -webkit-clip-path: inset(171px 0 74px 150px)
+    clip-path: inset(171px 0 74px 150px)
+    animation: 12s run linear 10.5s infinite
+
+@keyframes run 
+  0%, 9%
+    opacity 1
+  10%
+    opacity 0
+  100% 
+    opacity 0
+
+  
+  
+  
+
+

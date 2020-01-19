@@ -66,6 +66,14 @@ export default {
     'umi-plugin-polyfill'
   ],
   chainWebpack(config, { webpack }) {
+    config.module
+      .rule('css')
+      .test(/\.styl$/)
+      .use('style')
+      .loader('style-loader')
+      .loader('css-loader')
+      .loader('stylus-loader')
+
     config.module.rule('gltf')
       .test(/\.(gltf)$/)
       .use('gltf-webpack-loader')

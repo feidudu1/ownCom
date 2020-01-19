@@ -1,0 +1,26 @@
+@keyframes expand_1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+  
+    
+.barCover {
+  height: 10px;
+  width: 120px;
+  overflow: hidden;
+  animation: expand_1 6s linear forwards;
+  .bar {
+    height: 0;
+    width: 90px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-right-color: transparent;
+    border-right-width: 40px;
+  }
+}
+  
+    

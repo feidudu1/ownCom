@@ -3,7 +3,7 @@ import Link from 'umi/link';
 
 const shaders1 = '/shaders1'
 const shaders2 = '/shaders2'
-// const shaders3 = '/shaders3'
+const shaders3 = '/shaders3'
 // const shaders4 = '/shaders4'
 // const shaders5 = '/shaders5'
 // const shaders6 = '/shaders6'
@@ -21,10 +21,10 @@ export default () => (
       <li>
         <Link to={shaders2}>tongnan_ningmeng</Link>
       </li>
-      {/* <li>
-        <Link to={shaders3}>从toy到webgl：钻石，只成功了shader文件，另一个textureLod搞不定</Link>
-      </li>
       <li>
+        <Link to={shaders3}>zhejiang_caishui</Link>
+      </li>
+      {/* <li>
         <Link to={shaders4}>从toy到webgl：假钻石，连形状都是shander画的，不能作为材质。因为shader没有tDiffuse值映射到几何形体上，所以是一片的shader的样子</Link>
       </li>
       <li>
